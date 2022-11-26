@@ -9,7 +9,13 @@ class Car : public Vehicle {
 private:
 	int numDoors;
 public:
-	int getNumDoors() {
+	Car() {
+		numDoors = 0;
+	}
+	Car(string n, int y, int d) : Vehicle(n, y){
+		numDoors = d;
+	}
+	int getNumDoors() const{
 		return numDoors;
 	}
 	void setNumDoors(int doors) {

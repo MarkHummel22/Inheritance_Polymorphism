@@ -7,7 +7,13 @@ class Truck : public Vehicle {
 private:
 	double towingCapacity;
 public:
-	double getTowingCapacity() {
+	Truck() {
+		towingCapacity = 0;
+	}
+	Truck(string n, int y, int tc) : Vehicle(n, y){
+		towingCapacity = tc;
+	}
+	double getTowingCapacity() const{
 		return towingCapacity;
 	}
 	void setTowingCapacity(double gains) {
