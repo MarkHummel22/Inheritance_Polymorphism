@@ -13,6 +13,10 @@ using namespace std;
 
 int main() {
 
+	Car car("Honda", 2012, 5);
+	cout << car.getManufacturerName() << endl;
+	cout << car.getYearBuilt() << endl;
+	cout << car.getNumDoors();
 
 
 	return 0;
