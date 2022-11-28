@@ -2,7 +2,7 @@
 #include <string>
 #include "Car.h"
 
-using namespace std;
+
 
 Car::Car() {
 	doors = 0;

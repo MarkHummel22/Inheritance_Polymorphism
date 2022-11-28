@@ -2,7 +2,6 @@
 #include <string>
 #include "Truck.h"
 
-using namespace std;
 
 Truck::Truck() {
 	towingCap = 0;

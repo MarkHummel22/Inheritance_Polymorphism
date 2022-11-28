@@ -6,7 +6,7 @@
 #include <string>
 #include "Vehicle.h"
 
-using namespace std;
+
 Vehicle::Vehicle(){
 	manName = "";
 	yearBuilt = 1900;
