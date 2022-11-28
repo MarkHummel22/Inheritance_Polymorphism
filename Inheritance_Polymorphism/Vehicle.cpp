@@ -11,17 +11,17 @@ Vehicle::Vehicle(){
 	manName = "";
 	yearBuilt = 1900;
 }
-string Vehicle::getManufacturerName(){
+string Vehicle::getManName(){
 	return manName;
 }
-void Vehicle::setManufacturerName(string newMN){
-	manName = newMN;
+void Vehicle::setManName(string mn){
+	manName = mn;
 }
 int Vehicle::getYearBuilt() {
 	return yearBuilt;
 }
-void Vehicle::setYearBuilt(int newYr) {
-	yearBuilt = newYr;
+void Vehicle::setYearBuilt(int yr) {
+	yearBuilt = yr;
 }
 void Vehicle::displayInfo() {
 	cout << "Vehicle Information:" << endl;

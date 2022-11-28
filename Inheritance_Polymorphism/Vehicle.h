@@ -3,18 +3,17 @@
 #define VEHICLE_H
 
 using namespace std;
-class Vehicle
-{
+class Vehicle{
 protected:
 	string manName; 
 	int yearBuilt; 
 public:
 	Vehicle();
-	string getManufacturerName();
-	void setManufacturerName(string newMN);
+	string getManName();
+	void setManName(string MN);
 	int getYearBuilt();
 	void setYearBuilt(int newYr);
 	void displayInfo();
 };
 
-#endif // !VEHICLE_H
+#endif 

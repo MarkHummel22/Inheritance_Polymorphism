@@ -37,7 +37,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Driver1.cpp">
+    <None Include="test.cpp">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
