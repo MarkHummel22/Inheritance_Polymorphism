@@ -6,27 +6,15 @@ using namespace std;
 class Vehicle
 {
 protected:
-	string manufacturerName; // for holding the manufaturer name
-	int yearBuilt; // for holding the year the vehicle was built
+	string manName; 
+	int yearBuilt; 
 public:
-	Vehicle() {};
-	Vehicle(string mN, int yr);
-	string getManufacturerName() const;
-	void setManufacturerName(string newMN) {
-		manufacturerName = newMN;
-	}
-	int getYearBuilt() const {
-		return yearBuilt;
-	}
-	void setYearBuilt(int newYr) {
-		yearBuilt = newYr;
-	}
+	Vehicle();
+	string getManufacturerName();
+	void setManufacturerName(string newMN);
+	int getYearBuilt();
+	void setYearBuilt(int newYr);
 	void displayInfo();
-
-	
-
-	
-
 };
 
 #endif // !VEHICLE_H

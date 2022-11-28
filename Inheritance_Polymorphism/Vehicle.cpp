@@ -7,29 +7,24 @@
 #include "Vehicle.h"
 
 using namespace std;
-// Default constructor
-Vehicle::Vehicle() {
-	manufacturerName = "NONAMEGIVEN";
+Vehicle::Vehicle(){
+	manName = "";
 	yearBuilt = 1900;
 }
-// Constructor
-Vehicle::Vehicle(string mN, int yr) {
-	manufacturerName = mN;
-	yearBuilt = yr;
+string Vehicle::getManufacturerName(){
+	return manName;
 }
-string Vehicle::getManufacturerName() const {
-	return manufacturerName;
+void Vehicle::setManufacturerName(string newMN){
+	manName = newMN;
 }
-void Vehicle::setManufacturerName(string newMN) {
-	manufacturerName = newMN;
-}
-int Vehicle::getYearBuilt() const {
+int Vehicle::getYearBuilt() {
 	return yearBuilt;
 }
 void Vehicle::setYearBuilt(int newYr) {
 	yearBuilt = newYr;
 }
 void Vehicle::displayInfo() {
-	cout << manufacturerName << endl;
-	cout << yearBuilt << endl;
+	cout << "Vehicle Information:" << endl;
+	cout << "Manufacturer name: " << manName << endl;
+	cout << "Year built: " << yearBuilt << endl;
 }
