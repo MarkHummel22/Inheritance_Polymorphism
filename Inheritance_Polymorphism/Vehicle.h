@@ -2,27 +2,16 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
-
+using namespace std;
 class Vehicle
 {
 protected:
 	string manufacturerName; // for holding the manufaturer name
 	int yearBuilt; // for holding the year the vehicle was built
 public:
-	// Default constructor
-	Vehicle() {
-		manufacturerName = "NONAMEGIVEN";
-		yearBuilt = 1900;
-	}
-	// Constructor
-	Vehicle(string mN, int yr) {
-		manufacturerName = mN;
-		yearBuilt = yr;
-	}
-	// getters and setters
-	string getManufacturerName() const{
-		return manufacturerName;
-	}
+	Vehicle() {};
+	Vehicle(string mN, int yr);
+	string getManufacturerName() const;
 	void setManufacturerName(string newMN) {
 		manufacturerName = newMN;
 	}
@@ -33,6 +22,10 @@ public:
 		yearBuilt = newYr;
 	}
 	void displayInfo();
+
+	
+
+	
 
 };
 

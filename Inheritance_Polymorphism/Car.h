@@ -8,18 +8,10 @@ class Car : public Vehicle {
 private:
 	int numDoors;
 public:
-	Car() {
-		numDoors = 0;
-	}
-	Car(string n, int y, int d) : Vehicle(n, y){
-		numDoors = d;
-	}
-	int getNumDoors() const{
-		return numDoors;
-	}
-	void setNumDoors(int doors) {
-		numDoors = doors;
-	}
+	Car();
+	Car(string n, int y, int d) : Vehicle(n, y) {};
+	int getNumDoors() const;
+	void setNumDoors(int doors);
 	void displayInfo();
 };
 
